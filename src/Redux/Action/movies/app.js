@@ -1,10 +1,18 @@
 import {actionType} from "../action-type.js";
 
-export const fetchMovies = (movies)=>{
-    console.log(movies)
-    return{
-        type: actionType.FETCH_MOVIES,
-        payload: movies
+export const fetchNowMovies = (nmovies)=>{
+    // console.log(nmovies)
+    return {
+        type: actionType.NOW_PLAYING,
+        payload: nmovies
+    }
+}
+// console.log(fetchMovies())
+export const fetchTopMovies = (tmovies)=>{
+    // console.log(tmovies)
+    return {
+        type: actionType.TOP_RATED,
+        payload: tmovies
     }
 }
 

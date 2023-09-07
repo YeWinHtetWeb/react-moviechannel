@@ -3,3 +3,7 @@ youtube trailer => https://www.themoviedb.org/video/play?key={S_Pd2pGkq54}
 youtube key => https://api.themoviedb.org/3/movie/{id}/videos?api_key={apiKey}
 
 Images => https://api.themoviedb.org/3/movie/{id}/images?api_key={apiKey}
+
+search movie => https://api.themoviedb.org/3/search/movie?query={searchName}&api_key={apiKey}
+
+topRated movie => https://api.themoviedb.org/3/movie/top_rated?api_key={apiKey}

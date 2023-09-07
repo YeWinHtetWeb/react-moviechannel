@@ -1,18 +1,22 @@
 import {Navbar} from "flowbite-react";
 import {useNavigate} from "react-router-dom";
 import SearchBar from "../components/SearchBar.jsx";
+import {useEffect, useState} from "react";
+import DarkSwitch from "../components/DarkSwitch.jsx";
 'use client';
 
 const NavBar = ()=>{
     const navigate = useNavigate();
+    // const [scrollNav, setscrollNav] = useState(false);
+
     return (
         <>
             <Navbar
-                fluid
-                className="bg-gray-900"
+                
+                className="bg-gray-900 w-full z-10 fixed"
             >
                 <div  className="cursor-pointer">
-                    <span onClick={()=>navigate('/home')} className="self-center whitespace-nowrap text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-violet-700 font-semibold dark:text-white">
+                    <span onClick={()=>navigate('/')} className="self-center whitespace-nowrap text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-violet-700 font-semibold dark:text-white">
                       YWH-React-MovieChannel
                     </span>
                 </div>
@@ -22,7 +26,7 @@ const NavBar = ()=>{
 
                     <Navbar.Toggle />
                 </div>
-                <Navbar.Collapse>
+                {/* <Navbar.Collapse>
                     <Navbar.Link
                         active
                         href="#"
@@ -43,7 +47,7 @@ const NavBar = ()=>{
                     <Navbar.Link href="#">
                         Contact
                     </Navbar.Link>
-                </Navbar.Collapse>
+                </Navbar.Collapse> */}
             </Navbar>
         </>
     )

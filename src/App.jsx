@@ -14,8 +14,8 @@ function App() {
             <NavBar/>
             <Routes>
                 <Route path={'/'} element={<Home/>} />
-                <Route path={'/home'} element={<Home/>} />
-                <Route path={'/movie-detail/:movieId'} element={<MovieDetail/>} />
+                {/*<Route path={'/home'} element={<Home/>} />*/}
+                <Route path={'/movie-detail/:movieName/:movieId'} element={<MovieDetail/>} />
 
                 <Route path='/*' element={<NotFound/>} />
             </Routes>

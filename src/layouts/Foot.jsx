@@ -9,7 +9,7 @@ const Foot =()=> {
 
         <footer className="bg-gray-900">
             <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span className="text-sm text-gray-200 sm:text-center dark:text-gray-400">© 2023 <Link to={'/home'}
+      <span className="text-sm text-gray-200 sm:text-center dark:text-gray-400">© 2023 <Link to={'/'}
                                                                                           className="hover:underline">YWH-React-MovieChannel™</Link>. All Rights Reserved.
     </span>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-200 dark:text-gray-400 sm:mt-0">
